@@ -1,6 +1,6 @@
-package edu.utica.jobsub.general.dao;
+package edu.utica.jobsub.dao;
 
-import edu.utica.jobsub.general.model.Term;
+import edu.utica.jobsub.model.Term;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

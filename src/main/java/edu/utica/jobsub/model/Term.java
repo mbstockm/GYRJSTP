@@ -1,4 +1,4 @@
-package edu.utica.jobsub.general.model;
+package edu.utica.jobsub.model;
 
 import com.opencsv.bean.CsvBindByName;
 

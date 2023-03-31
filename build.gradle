@@ -34,13 +34,19 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
-    implementation 'edu.utica:jobsub-starter:1.0'
+//    implementation 'edu.utica:jobsub-starter:1.0'
+
+    implementation 'edu.utica:jobsub-job-starter:1.0'
+    implementation 'edu.utica:jobsub-datasource-starter:1.0'
+
+    implementation 'com.opencsv:opencsv:5.6'
 
     implementation files('libs/ojdbc8.jar')
     implementation files('libs/gurjbif.jar')
 
-    implementation 'com.opencsv:opencsv:5.6'
 }
+
+
 
 def job = 'GYRJSTP'
 def oneup = '9999999'
@@ -79,7 +85,7 @@ bootRun {
     mainClass = 'com.sct.messaging.bif.banner.BannerBatchProcessor'
 
     jvmArgs = [
-            '-Dbatch.processor.class=edu.utica.jobsub.general.Gyrjstp',
+            '-Dbatch.processor.class=edu.utica.jobsub.Gyrjstp',
             '-Dspring.profiles.active=DEV'
     ]
 

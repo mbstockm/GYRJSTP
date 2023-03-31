@@ -1,7 +1,7 @@
-package edu.utica.jobsub.general.service;
+package edu.utica.jobsub.service;
 
-import edu.utica.jobsub.general.dao.TermDao;
-import edu.utica.jobsub.general.model.Term;
+import edu.utica.jobsub.dao.TermDao;
+import edu.utica.jobsub.model.Term;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

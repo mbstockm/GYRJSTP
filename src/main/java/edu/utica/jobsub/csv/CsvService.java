@@ -1,4 +1,4 @@
-package edu.utica.jobsub.general.csv;
+package edu.utica.jobsub.csv;
 
 import com.opencsv.bean.*;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
